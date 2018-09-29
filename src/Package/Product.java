@@ -1,7 +1,7 @@
-//Nicolas Caceda
+package Package;//Nicolas Caceda
 //9.29.2018
-//Abstract class that implements the Item interface
-//Product will implement the basic functionality that all items on a production line should have
+//Abstract class that implements the Package.Item interface
+//Package.Product will implement the basic functionality that all items on a production line should have
 
 
 import java.util.Date;

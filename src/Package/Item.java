@@ -1,4 +1,4 @@
-//Nicolas Caceda
+package Package;//Nicolas Caceda
 //9.29.2018
 //Interface for Items. A binding contract that all items must implement these.
 
