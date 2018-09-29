@@ -1,5 +1,7 @@
 # JavaProgrammingProject
 
+Assignment for OOP.
+
 
 Scenario - OraclProduction
 ----------------------------
