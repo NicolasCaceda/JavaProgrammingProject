@@ -13,7 +13,7 @@ public class AudioPlayer extends Product implements MultiMediaControl {
   public AudioPlayer(String name, String audioSpecification) {
     super(name);
     this.audioSpecification = audioSpecification;
-    this.mediaType = ItemType.AUDIO;
+    this.mediaType = ItemType.AU;
   }
 
   @Override

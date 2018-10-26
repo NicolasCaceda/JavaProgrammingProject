@@ -4,10 +4,10 @@ package sample;
 //9.29.2018
 //All items will have a pre-set type. Currently there are 4 types.
 public enum ItemType {
-  AUDIO("AU"),
-  VISUAL("VI"),
-  AUDIOMOBILE("AM"),
-  VISUALMOBILE("VM");
+  AU("AUDIO"),
+  VI("VISUAL"),
+  AM("AUDIOMOBILE"),
+  VM("VISUALMOBILE");
 
   //enum constant
   private final String code;
