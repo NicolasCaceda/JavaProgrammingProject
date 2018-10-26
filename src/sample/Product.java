@@ -18,7 +18,7 @@ abstract class Product implements Item {
 
   //Integer class variable called currentProductionNumber. This will store the next number to be
   //assigned to serialNumber.
-  private static int currentProductionNumber;
+  private static int currentProductionNumber = 1;
 
 
   //A constructor that will take in the name of the product and set this to the field variable name.
