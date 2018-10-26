@@ -1,4 +1,4 @@
-package Package;
+package sample;
 
 //Nicolas Caceda
 //9.29.2018
@@ -10,20 +10,20 @@ public enum ItemType {
   VISUALMOBILE("VM");
 
   //enum constant
-  private final String Code;
+  private final String code;
 
 
   /* Constructor is private by default
    *  Allows me to use strings in the parenthesis above
    */
-  ItemType(String Code) {
-    this.Code = Code;
+  ItemType(String code) {
+    this.code = code;
   }
 
   /* Overrides toString and allows the programmer to use the enum
    */
   @Override
   public String toString() {
-    return Code;
+    return code;
   }
 }

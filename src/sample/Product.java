@@ -1,8 +1,10 @@
-package Package;//Nicolas Caceda
-//9.29.2018
-//Abstract class that implements the Package.Item interface
-//Package.Product will implement the basic functionality that all items on a production line should have
+package sample;
 
+//Nicolas Caceda
+//9.29.2018
+//Abstract class that implements the sample.Item interface
+//sample.Product will implement the basic functionality that all items on a production line should
+// have
 
 import java.util.Date;
 
@@ -59,9 +61,9 @@ abstract class Product implements Item {
   //Will return the data of the product
   @Override
   public String toString() {
-    return "Manufacturer  :" + manufacturer + '\n'
-        + "Serial Number :" + serialNumber + '\n'
-        + "Date          :" + manufacturedOn + '\n'
-        + "Name          :" + name + '\n';
+    return "Manufacturer  : " + manufacturer + '\n'
+        + "Serial Number : " + serialNumber + '\n'
+        + "Date          : " + manufacturedOn + '\n'
+        + "Name          : " + name + '\n';
   }
 }
