@@ -1,6 +1,7 @@
 package sample;
 
 /*
+Nicolas Caceda
 The audio players and the movie players share the same control interface on the physical devices.
 The control interface does not care if the device is a video player or an audio player. Create a
 driver class that will demonstrate that any class that implements the MultimediaControl Interface

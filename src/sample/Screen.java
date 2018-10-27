@@ -1,5 +1,8 @@
 package sample;
 
+//Nicolas Caceda
+//a class called Screen that implements ScreenSpec
+
 public class Screen implements ScreenSpec {
 
   String resolution;

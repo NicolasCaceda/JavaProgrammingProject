@@ -1,5 +1,9 @@
 package sample;
 
+//Nicolas Caceda
+//class called MoviePlayer that extends Product and implements MultimediaControl
+//methods from the MultimediaControl interface in a similar fashion to the audio player.
+
 public class MoviePlayer extends Product implements MultiMediaControl {
 
   Screen screen;

@@ -1,5 +1,7 @@
 package sample;
 
+//Nicolas Caceda
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -22,7 +24,7 @@ public class Main {
     print(products);
   }
 
-  public static List<Product> testCollection() {
+  public static Collection<Product> testCollection() {
 
     AudioPlayer a1 = new AudioPlayer("iPod Mini","MP3");
     AudioPlayer a2 = new AudioPlayer("Walkman","WAV ");
@@ -32,7 +34,7 @@ public class Main {
         new Screen("1366x768", 40, 22), MonitorType.LED);
 
     // Write one line of code here to create the collection
-    List<Product> products = new ArrayList<>();
+    ArrayList<Product> products = new ArrayList<>();
 
     products.add(a1);
     products.add(a2);

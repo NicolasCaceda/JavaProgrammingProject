@@ -1,5 +1,8 @@
 package sample;
 
+//Nicolas Caceda
+//an interface called ScreenSpec
+
 public interface ScreenSpec {
 
   String getResolution();

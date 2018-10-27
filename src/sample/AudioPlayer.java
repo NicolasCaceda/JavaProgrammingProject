@@ -1,5 +1,9 @@
 package sample;
 
+//Nicolas Caceda
+//A concrete class that will allow us to capture the details of an audio player.
+//subclass of Product and implements the MultimediaControl interface
+
 public class AudioPlayer extends Product implements MultiMediaControl {
 
   String audioSpecification;
@@ -7,6 +11,7 @@ public class AudioPlayer extends Product implements MultiMediaControl {
 
   /**
    * Constructor for AudioPlayer.
+   *
    * @param name Audio Player Name
    * @param audioSpecification Audio Player Specification
    */
