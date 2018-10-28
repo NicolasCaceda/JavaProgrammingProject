@@ -15,16 +15,22 @@ public class Main {
     ArrayList<Product> products = new ArrayList<>();
 
     // Write one line of code to call testCollection and assign the result to the ArrayList
-    products.addAll(testCollection());
+    products = testCollection();
+
+    //saved for future reference
+    //products.addAll(testCollection());
 
     // Write one line of code to sort the ArrayList
-    Collections.sort(products ,(Obj1, Obj2) -> Obj1.getName().compareTo(Obj2.getName()));
+
+    Collections.sort(products);
+    //saved for future reference
+    //Collections.sort(products ,(Obj1, Obj2) -> Obj1.getName().compareTo(Obj2.getName()));
 
     // Call the print method on the ArrayList
     print(products);
   }
 
-  public static Collection<Product> testCollection() {
+  public static ArrayList<Product> testCollection() {
 
     AudioPlayer a1 = new AudioPlayer("iPod Mini","MP3");
     AudioPlayer a2 = new AudioPlayer("Walkman","WAV ");

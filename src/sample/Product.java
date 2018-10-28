@@ -8,7 +8,7 @@ package sample;
 
 import java.util.Date;
 
-abstract class Product implements Item {
+abstract class Product implements Item, Comparable<Product> {
 
   //did not use access modifiers because the steps did not ask for any
   int serialNumber;
@@ -65,5 +65,10 @@ abstract class Product implements Item {
         + "Serial Number : " + serialNumber + '\n'
         + "Date          : " + manufacturedOn + '\n'
         + "Name          : " + name + '\n';
+  }
+
+  @Override
+  public int compareTo(Product p) {
+    return this.getName().compareTo(p.getName());
   }
 }
