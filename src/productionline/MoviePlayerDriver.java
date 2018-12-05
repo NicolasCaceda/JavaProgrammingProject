@@ -1,4 +1,4 @@
-package productionLine;
+package productionline;
 
 //Nicolas Caceda
 //a driver class

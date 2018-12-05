@@ -1,4 +1,4 @@
-package productionLine;
+package productionline;
 
 //Nicolas Caceda
 //an enum called MonitorType that stores monitor types

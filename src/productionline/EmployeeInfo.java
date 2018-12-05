@@ -1,4 +1,4 @@
-package productionLine;
+package productionline;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -9,7 +9,7 @@ public class EmployeeInfo {
   private StringBuilder name;
   private String code;
   private String deptId;
-  Pattern p = Pattern.compile("[A-Z][a-z][a-z][a-z][0-9][0-9]");
+  private Pattern ppp = Pattern.compile("[A-Z][a-z][a-z][a-z][0-9][0-9]");
   private Scanner in;
 
 
@@ -87,7 +87,12 @@ public class EmployeeInfo {
     return name.toString().contains(" ");
   }
 
-  public String getDeptId(){
+  /**
+   * get the id from the user.
+   *
+   * @return Department id
+   */
+  private String getDeptId() {
     System.out.print("Please enter the department ID: ");
     String departmentId = in.nextLine();
     if (validId(departmentId)) {
@@ -96,26 +101,51 @@ public class EmployeeInfo {
     return "None01";
   }
 
-  private void setDeptId(){
+  /**
+   * sets the department id.
+   */
+  private void setDeptId() {
     this.deptId = getDeptId();
   }
 
-  private String getId(){
+  /**
+   * Gets the department id.
+   *
+   * @return department id
+   */
+  private String getId() {
     return this.deptId;
   }
 
-  private boolean validId(String id){
-    Matcher m = p.matcher(id);
+  /**
+   * Tests if input is valid for the ID.
+   *
+   * @param id Is going to be checked if valid.
+   * @return returns true if valid; false if not valid
+   */
+  private boolean validId(String id) {
+    Matcher m = ppp.matcher(id);
     return m.matches();
   }
 
-  public String reverseString(String id){
-    if((null == id) || id.length() <= 1){
+  /**
+   * recursive method that this program awkwardly asks for.
+   *
+   * @param id the id to be revered
+   * @return a reversed id
+   */
+  private String reverseString(String id) {
+    if ((null == id) || id.length() <= 1) {
       return id;
     }
     return reverseString(id.substring(1)) + id.charAt(0);
   }
 
+  /**
+   * overrided toString method.
+   *
+   * @return returns employee code and department number as a string
+   */
   @Override
   public String toString() {
     return "Employee Code: " + code

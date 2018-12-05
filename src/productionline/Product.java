@@ -1,9 +1,9 @@
-package productionLine;
+package productionline;
 
 //Nicolas Caceda
 //9.29.2018
-//Abstract class that implements the productionLine.Item interface
-//productionLine.Product will implement the basic functionality that all items on a production line should
+//Abstract class that implements the productionline.Item interface
+//productionline.Product will implement the basic functionality that all items on a production line should
 // have
 
 import java.util.Date;
