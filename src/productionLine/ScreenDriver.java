@@ -1,4 +1,4 @@
-package sample;
+package productionLine;
 
 //Nicolas Caceda
 //a Driver class for Screen that tests the functionality of the screen class

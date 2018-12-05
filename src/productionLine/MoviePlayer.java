@@ -1,4 +1,4 @@
-package sample;
+package productionLine;
 
 //Nicolas Caceda
 //class called MoviePlayer that extends Product and implements MultimediaControl

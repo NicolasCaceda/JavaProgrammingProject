@@ -1,4 +1,4 @@
-package sample;
+package productionLine;
 
 //Nicolas Caceda
 //A concrete class that will allow us to capture the details of an audio player.

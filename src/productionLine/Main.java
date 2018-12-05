@@ -1,12 +1,9 @@
-package sample;
+package productionLine;
 
 //Nicolas Caceda
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 
 public class Main {
   public static void main(String args[]){
@@ -51,7 +48,7 @@ public class Main {
 
   // Step 16
   // Create print method here
-  public static void print(ArrayList<Product> products){
+  public static <Product> void print(ArrayList<Product> products){
     for(Product P : products){
       System.out.println(P);
     }

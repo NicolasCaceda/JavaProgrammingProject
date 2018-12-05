@@ -1,4 +1,4 @@
-package sample;
+package productionLine;
 
 //Nicolas Caceda
 //an interface called ScreenSpec
