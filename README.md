@@ -17,3 +17,12 @@ class for music and movie players.
 
 Your task is to create a flexible structure that could be used in any production line. This structure would
 then allow easy modification to handle different products.
+
+
+## Built With
+
+* IntelliJ
+
+## Author
+
+* Nicolas Caceda
