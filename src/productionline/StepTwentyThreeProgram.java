@@ -9,6 +9,18 @@ public class StepTwentyThreeProgram {
   private static Scanner read = new Scanner(System.in);
   private static int selection;
 
+  /**
+   * Create a program that would allow a user to Add a new product and to specify how many items of
+   * that product should be created. The program will then create these items and store them in a
+   * collection.
+   * The collection can be displayed at any time.
+   * New Products can be added at any time.
+   * Production statistics can be displayed – Total items produced, number of each item, the number
+   * of unique products created etc.
+   * The operator will decide when to stop the program. The program will be menu driven and can
+   * either be a console program or with a richer graphical user interface.
+   * @param args args
+   */
   public static void main(String[] args) {
 
     System.out.println("Hello and welcome to OraclProduction Ltd.");
@@ -34,6 +46,7 @@ public class StepTwentyThreeProgram {
           break;
         case 3:
           stillActive = false;
+          read.close();
           break;
         default:
           System.out.println("Please select one of these numbers: 1, 2, or 3.");
@@ -44,8 +57,8 @@ public class StepTwentyThreeProgram {
   }
 
   private static void seeStats() {
-    for (Product P : products) {
-      System.out.println(P.serialNumber + " " + P);
+    for (Product p : products) {
+      System.out.println(p.serialNumber + " " + p);
     }
     System.out.println(products.size() + " Items have been created");
   }
@@ -69,8 +82,9 @@ public class StepTwentyThreeProgram {
           break;
         case 3:
           stillActive = false;
+          break;
         default:
-          System.out.println("Please select one of these numbers: 1 or 2.");
+          System.out.println("Please select one of these numbers: 1 or 2 or 3.");
       }
     }
   }

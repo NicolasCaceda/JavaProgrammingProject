@@ -1,3 +1,10 @@
+/*
+An additional piece of information is required to be produced for the auditing with the users
+department information being required as well. The department code is made up of four letters and
+two numbers. The format of the department code is the first letter must be in uppercase with the
+ following three all being lowercase and no spaces.
+ */
+
 package productionline;
 
 import java.util.Scanner;
