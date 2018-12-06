@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
 public class EmployeeInfo {
 
   private StringBuilder name;
@@ -16,7 +17,7 @@ public class EmployeeInfo {
   /**
    * Constructor creates the info of the employee.
    */
-  public EmployeeInfo() {
+  EmployeeInfo() {
     in = new Scanner(System.in, "UTF-8");
     setName();
     setDeptId();
@@ -149,9 +150,19 @@ public class EmployeeInfo {
   @Override
   public String toString() {
     return "Employee Code: " + code
-        + '\n' + "Department Number: " + deptId;
+        + System.getProperty("line.separator")
+        + "Department Number: " + deptId;
   }
 
-
+  /*
+  void saveEmployee() {
+    ProcessFiles fileProcessor = new ProcessFiles();
+    try {
+      fileProcessor.writeFile(this);
+    } catch (Exception ex) {
+      System.out.println("No such file.");
+    }
+  }
+  */
 }
 

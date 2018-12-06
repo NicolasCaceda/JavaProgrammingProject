@@ -47,7 +47,8 @@ public class AudioPlayer extends Product implements MultiMediaControl {
   @Override
   public String toString() {
     return super.toString()
-        + "Audio Spec    : " + this.audioSpecification + '\n'
+        + "Audio Spec    : " + this.audioSpecification + System.getProperty("line.separator")
         + "Type          : " + this.mediaType;
   }
+
 }

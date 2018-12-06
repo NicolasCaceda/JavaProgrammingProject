@@ -61,14 +61,15 @@ abstract class Product implements Item, Comparable<Product> {
   //Will return the data of the product
   @Override
   public String toString() {
-    return "Manufacturer  : " + manufacturer + '\n'
-        + "Serial Number : " + serialNumber + '\n'
-        + "Date          : " + manufacturedOn + '\n'
-        + "Name          : " + name + '\n';
+    return "Manufacturer  : " + manufacturer + System.getProperty("line.separator")
+        + "Serial Number : " + serialNumber + System.getProperty("line.separator")
+        + "Date          : " + manufacturedOn + System.getProperty("line.separator")
+        + "Name          : " + name + System.getProperty("line.separator");
   }
 
   @Override
   public int compareTo(Product p) {
     return this.getName().compareTo(p.getName());
   }
+
 }
